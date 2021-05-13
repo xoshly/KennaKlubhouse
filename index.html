@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Kenna's Klubhouse</title>
+</head>
+<body>
+    <!--Nav-->
+    <section id="nav-links">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#signup">Sign Up</a>
+        </nav>
+    </section>
+    <!--Header-->
+    <section>
+        <header>
+            <h1>Welcome to Kenna's Klub</h1>
+            <h2>The Koolest Learning Club in Town</h2>
+        </header>
+    </section>
+    <!--About Klub-->
+    <section id="about">
+        <h3>Here, we use only the most advanced learning system to help your child excel with their academics</h3>
+            <p>We cater to ages 3 - 18.</p>
+            <br>
+        <div class="breakdown">
+            <h4>Here are some of our advanced technology we use for learning:</h4>
+            <ul>
+                <li>Apple iPads for every student</li>
+                <li>Virtual Reality learning games</li>
+                <li>Free Subscription to ABC Mouse Software for younger children</li>
+                <li>Free one-on-one mentor for homework help</li>
+                <li>Unlimited digital resources tailored to child's age and learning capability</li>
+                <li>Access to our state-out-the-art digital library</li>
+            </ul>
+      </div>
+    </section>
+    
+    <!--Sign Up Form-->
+    <section id="signup">
+        <form id="form-group">
+          <div><h3>Please sumbit form for (1) child at a time</h3></div>
+            <div>
+                <label id="name-label" for="name">Your Child's Name</label>
+                  <input type="text" id="name" name="name" placeholder="Enter Child's Name" required/>
+            </div>
+            <div>
+                
+                <label id="number-label" for="age">Your Child's Age</label>
+                  <input type="number" id="age" name="age" min="3" max="18" placeholder="Enter Child's Current Age" required/>
+            </div>
+            <div>
+              <p>Your Child's Grade Level</p>
+              
+                <label>
+                  <input type="radio" name="grade" value="preschool" checked/>Preschool
+                </label>
+                <label>
+                  <input type="radio" name="grade" value="kindergarden" checked/>Kindergarden 
+                </label>
+                <label>
+                  <input type="radio" name="grade" value="elementary" checked/>Elementary(1-5)
+                </label>
+                <label>
+                  <input type="radio" name="grade" value="middle-school" checked/>Middle School(6-8)
+                </label>
+                <label>
+                  <input type="radio" name="grade" value="high-school" checked/>High School(9-12)
+                </label>
+            </div>
+            <div>
+              <label id="birthday-label" for="birthday">Your Child's Birthday</label>
+                <input type="date" id="birthday" name="birthday"/>
+            </div>
+            <div>
+              <p>Your Child's Gender</p>
+                <label>
+                  <input type="radio" name="gender" value="Male" checked/>Male
+                </label>
+                <label>
+                  <input type="radio" name="gender" value="Female" checked/>Female
+                </label>
+            </div>
+            <div>
+              <p>Does your child take any medication?</p>
+                <label>
+                  <input type="radio" name="meds" value="yes" required checked/>Yes
+                </label>
+                <label>
+                  <input type="radio" name="meds" value="no" required checked/>No
+                </label>
+              <p>If so, please list them here:</p>
+                <label for="med-names"></label>
+                  <textarea name="med-names" id="med-names" placeholder="Enter Here"></textarea>
+            </div>
+            <div>
+              <label for="parent-name">Parent / Guardian's Name</label>
+                <input type="text" name="parent" id="parent-name" placeholder="Enter Your Name" required/>
+            </div>
+            <div>
+              <label for="parent-email">Your Email</label>
+                <input type="email" name="email" id="parent-email" placeholder="Enter Your Email" required/>
+            </div>
+            <div>
+              <label>Your Phone Number</label>
+                <input type="tel" name="telnumber" id="telnumber" required/>
+            </div>
+            <div>
+              <button type="submit" id="submit" class="submit-button" <strong><big>Submit</big></strong></button>
+            </div>
+        </form>
+    </section>
+    <!--Footer-->
+    <p>&copy Kenna's Klubhouse</p>
+</body>
+</html>
