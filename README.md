@@ -1,11 +1,14 @@
 # Kenna's Klubhouse
  
-a basic tribute page for the late singer and actress, Aaliyah, who was tragically taken from us in an airplane crash in 2001.
+# About
+a basic website for a daycare center. 
+
+# Features 
 
 ## Live View
-[Live View](https://xoshly.github.io/AaliyahTributePage/)
+[Live View]()
 
-![altText](https://github.com/xoshly/AaliyahTributePage/blob/main/.github/Screenshot%20(6).png?raw=true)
+![altText]()
 
 ## Contributors
 [@xoshly](https://twitter.com/xoshly)
