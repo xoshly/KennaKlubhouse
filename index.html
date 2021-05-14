@@ -14,21 +14,26 @@
     <p><i class="fas fa-envelope"></i> kennasklubhouse@kklub.com</p>
     <h3>Kenna's Klubhouse</h3>
   </header>
-  <nav>
-    <ul>
-      <li><a href="#welcome"></a>Welcome</li>
-      <li><a href="#covid"></a>Covid-19 Procedures</li>
-      <li><a href="#about"></a>About Us</li>
-      <li><a href="#contact"></a>Contact Us</li>
-    </ul>
-  </nav>
-  <main>
-    <section class="section-grid" id="welcome">
+  
+  <!-- Using a div instead of a nav tag to create dropdown menu. 
+    It will not work if you use a nav tag because it will automatically create a list -->
+  <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+      <a href="#welcome">Welcome</a>
+      <a href="#covid">Covid-19 Procedures</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+  </div>
+  
+  <main class="grid-container">
+    <section class="item1" id="welcome">
       <h2>Welcome</h2>
       <h3>Now enrolling ages 3-12</h3>
       <h3>Slots available for ages 13-18 coming soon</h3>
     </section>
-    <section class="section-grid" id="covid">
+    <section class="item2" id="covid">
       <h2>Covid-19 Procedures</h2>
       <h3>We are fully commited to keep your child and our staff safe as possible. Here are some of our Covid-19 policies:
         <ul>
@@ -36,14 +41,14 @@
           <li>If child is too young for vaccine, Covid test must be negative 48 hours prior to attending</li>
           <li>Face masks are required while in the building</li>
           <li>Staff and children must wash hands when entering and prior exiting the building and prior snack time</li>
-          <li>For our full policy list, visit <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/guidance-for-childcare.html">CDC Guidelines</a></li>
+          <li>For our full policy list, visit <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/schools-childcare/guidance-for-childcare.html">CDC Guidelines.</a></li>
         </ul>
     </section>
-    <section id="about">
+    <section class="item3" id="about">
       <h2>About Us</h2>
       <h3>We are an educational daycare and afterschool center for children ages 3-18. We are a non-profit organization that provides superior education for your child. </h3>
     </section>
-    <section id="contact">
+    <section class="item4" id="contact">
       <h2>Contact Us</h2>
       <h3>123 College Street. Macon Ga, 31220</h3>
       <h3>(478)555-5590</h3>

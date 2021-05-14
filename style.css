@@ -7,9 +7,85 @@ body {
   padding: 0 auto;
   max-width: 100%;
   scroll-behavior: smooth;
+  overflow: auto; /* this adds scrollbars only when necessary */
 }
 
-header {
+header > p {
   display: inline-flex;
   align-items: space-around;
+}
+
+/* this styles the button */
+.dropbtn {
+  background-color: teal;
+  color: aliceblue;
+  padding: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+/* this positions the button */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+/* this styles the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: aqua;
+  box-shadow: 0px 8px 16px 0px white;
+  z-index: 1;
+  min-width: 150px;
+}
+/* this styles the links inside the dropdown menu */ 
+.dropdown-content > a {
+  display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+/* this changes the color of dropdown links on hover */
+.dropdown-content > a:hover {
+  background-color: thistle;
+}
+/* this shows the dropdown menu on hover */ 
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* this changes background color of dropdown button on hover */ 
+.dropdown:hover .dropbtn {
+  background-color: yellow;
+  color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  padding: 20px;
+  grid-template-areas: 
+    'welcome welcome covid covid'
+    'welcome welcome covid covid'
+    'about about about about'
+    'contact contact contact contact';
+  background-color: blue;
+  
+}
+
+.item1 {
+  grid-area: welcome;
+}
+
+.item2 {
+  grid-area: covid;
+}
+
+.item3 {
+  grid-area: about;
+}
+
+.item4 {
+  grid-area: contact;
 }
