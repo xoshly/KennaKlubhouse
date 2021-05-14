@@ -10,6 +10,7 @@ body {
   overflow: auto; /* this adds scrollbars only when necessary */
   box-sizing: border-box;
   width: 100%;
+  background-color: lightgoldenrodyellow;
 }
 
 header > p {
